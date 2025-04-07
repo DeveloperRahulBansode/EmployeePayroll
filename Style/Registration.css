@@ -1,0 +1,291 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #42515f;
+}
+
+/* Header Styles */
+.header {
+    padding: 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.emp-text {
+    color: #82a70c;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.payroll-text {
+    color: #42515f;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.form-container {
+    width: 70%;
+    width: 800px;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;    
+}
+
+.form-title {
+    font-size: 24px;
+    color: #42515f;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* Form Row Styles */
+.form-row {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.label {
+    width: 140px;
+    font-size: 16px;
+    color: #42515f;
+    padding-top: 8px;
+}
+
+.input-field {
+    flex: 1;
+}
+
+.text-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.text-area {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Profile Image Options */
+.profile-options {
+    display: flex;
+    gap: 30px;
+}
+
+.profile-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-option input {
+    position: absolute;
+    opacity: 0;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile1 {
+    background-image: url('https://www.coachcarson.com/wp-content/uploads/2018/09/Chad-Profile-pic-circle.png');
+}
+
+.profile2 {
+    background-image: url('https://www.mockofun.com/wp-content/uploads/2019/12/circle-profile-pic.jpg');
+}
+
+.profile3 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVRR689h-rJJsTMJbY7w4zLP30xxYflNRy6HM164ZjtcJHhgL8su7kCJgBLqdJOx_2D4&usqp=CAU');
+}
+
+.profile4 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrHo2ZyyMTK_nsBZhMGUcOoMtI1U083DKd6EUExMH_AqhC0GUACUazaLnxpgfK0ZhB8n0&usqp=CAU');
+}
+
+.profile-option input:checked + .profile-img {
+    border: 3px solid #82a70c;
+}
+
+/* Radio Options */
+.radio-options {
+    display: flex;
+    gap: 30px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-label {
+    margin-left: 5px;
+}
+
+/* Checkbox Options */
+.checkbox-options {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    margin-left: 5px;
+}
+
+/* Select Dropdown Styles */
+.select-container {
+    position: relative;
+    min-width: 150px;
+}
+
+.select-dropdown {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    font-size: 16px;
+}
+
+/* Date Inputs */
+.date-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.date-select {
+    flex: 1;
+}
+
+/* Button Styles */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.btn {
+    min-width: 140px;
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.cancel-btn {
+    background-color: #e2e2e2;
+    color: #42515f; 
+}
+.submit-reset-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.submit-btn {
+    background-color: #e2e2e2;
+    color: #42515f;
+}
+
+.reset-btn {
+    background-color: #e2e2e2;
+    color: #42515f;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .form-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    
+    .date-inputs {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .button-row {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}

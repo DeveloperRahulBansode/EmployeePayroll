@@ -175,6 +175,12 @@ body {
 .finance-tag {
     background-color: #fff9c4;
 }
+.engineer-tag {
+    background-color: #bbdefb;
+}
+.others-tag {
+    background-color: #f8bbd0;
+}
 
 .actions-cell {
     display: flex;

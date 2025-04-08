@@ -99,7 +99,11 @@
                         <option>₹ 20,000</option>
                         <option>₹ 30,000</option>
                         <option>₹ 40,000</option>
-                        <option>₹ 50,000</option>
+                        <option>₹ 60,000</option>
+                        <option>₹ 70,000</option>
+                        <option>₹ 80,000</option>
+                        <option>₹ 90,000</option>
+
                     </select>
                 </div>
             </div>
@@ -107,26 +111,24 @@
             <div class="form-row">
                 <div class="label">Start Date</div>
                 <div class="date-inputs">
-                    <div class="select-container date-select">
-                        <select class="select-dropdown" >
+                    <div  class="select-container date-select">
+                        <select id="day" class="select-dropdown" >
                             <option disabled selected>Day</option>
                             <option>1</option>
                             <option>2</option>
-                            <!-- More options would go here -->
                             <option>31</option>
                         </select>
                     </div>
                     <div class="select-container date-select">
-                        <select class="select-dropdown">
+                        <select id="month" class="select-dropdown">
                             <option disabled selected>Month</option>
                             <option>Jan</option>
                             <option>Feb</option>
-                            <!-- More options would go here -->
                             <option>Dec</option>
                         </select>
                     </div>
                     <div class="select-container date-select">
-                        <select class="select-dropdown">
+                        <select id="year" class="select-dropdown">
                             <option disabled selected>Year</option>
                             <option>2020</option>
                             <option>2021</option>
@@ -156,6 +158,7 @@
                 
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../Script/Registration.js"></script>
 </body>
 </html>

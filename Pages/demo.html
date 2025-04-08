@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is paragraph</p>
+    <p>This is another paragraph</p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$('p').click(function() {
+    console.log("its clicked p");
+
+    // $(this).hide();
+    $(this).css("color", "blue");
+    $(this).fadeOut(1000);
+    
+});
+
+$('p').hover(function() {
+    console.log("its hovered p");
+
+    $(this).css("color", "red");
+
+});
+
+
+</script>
+
+    
+</body>
+</html>

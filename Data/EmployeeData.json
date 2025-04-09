@@ -1,5 +1,22 @@
 {
   "employees": [
-  
+    {
+      "id": "d301",
+      "name": "Rahul Banosode",
+      "profile": "https://www.coachcarson.com/wp-content/uploads/2018/09/Chad-Profile-pic-circle.png",
+      "gender": "Male",
+      "salary": "₹ 90,000",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "startDate": {
+        "day": "1",
+        "month": "Feb",
+        "year": "2025"
+      },
+      "notes": "hii"
+    }
   ]
 }

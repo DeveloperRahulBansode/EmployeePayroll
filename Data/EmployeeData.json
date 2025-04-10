@@ -1,14 +1,12 @@
 {
   "employees": [
     {
-      "id": "d301",
       "name": "Rahul Banosode",
       "profile": "https://www.coachcarson.com/wp-content/uploads/2018/09/Chad-Profile-pic-circle.png",
       "gender": "Male",
       "salary": "₹ 90,000",
       "department": [
         "HR",
-        "Finance",
         "Engineer"
       ],
       "startDate": {
@@ -16,7 +14,25 @@
         "month": "Feb",
         "year": "2025"
       },
-      "notes": "hii"
+      "notes": "hii",
+      "id": "d301"
+    },
+    {
+      "id": "daf8",
+      "name": "Pratik Jige",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVRR689h-rJJsTMJbY7w4zLP30xxYflNRy6HM164ZjtcJHhgL8su7kCJgBLqdJOx_2D4&usqp=CAU",
+      "gender": "Male",
+      "salary": "₹ 80,000",
+      "department": [
+        "HR",
+        "Finance"
+      ],
+      "startDate": {
+        "day": "2",
+        "month": "Jan",
+        "year": "2023"
+      },
+      "notes": "hello"
     }
   ]
 }

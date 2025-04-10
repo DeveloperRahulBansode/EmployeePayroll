@@ -6,6 +6,7 @@
     <title>Employee Details</title>
     <link rel="stylesheet" href="../Style/DashBoard.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
     <header class="header">
@@ -23,9 +24,11 @@
             <div class="details-header">
                 <h2 class="details-title">Employee Details</h2>
                 <div class="details-actions">
-                    <div class="search-box">
-                        <span class="material-icons">search</span>
+                    <div class="search-box" id="searchBox">
+                            <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                            <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
                     </div>
+                      
                     <button class="add-user-button">
                         <span class="material-icons">add</span> Add User
                     </button>

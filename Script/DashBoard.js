@@ -118,17 +118,24 @@ $(document).ready(function () {
 //  delegated event handler for dynamically added elements brcouce elements are added after the DOM is loaded
 // Use event delegation to handle clicks on dynamically added elements
 
+
+//Search option
+$("#searchright").on("keyup", function () {
+  const searchTerm = $(this).val().toLowerCase();
+
+  $("#tableBody tr").each(function () {
+    const employeeName = $(this).find(".name-cell span").text().toLowerCase();
+    $(this).toggle(employeeName.includes(searchTerm));
+  });
+});
+
+
+//delete button
   $("#tableBody").on("click", ".delete-icon", function () {
     const id = $(this).data("id");
     deleteEmployee(id);
   });
-  
-  $("#tableBody").on("click", ".edit-icon", function () {
-    const id = $(this).data("id");
-    editEmployee(id);
-  });
-  
-  
+
   function deleteEmployee(id) {  
     if (confirm("Are you sure you want to delete this employee?")) {
       $.ajax({
@@ -146,18 +153,32 @@ $(document).ready(function () {
     }
   }
 
+  
+//edit button
+  $("#tableBody").on("click", ".edit-icon", function () {
+    const id = $(this).data("id");
+    editEmployee(id);
+  });
+
   function editEmployee(id) {
     $.ajax({
       url: `${url}/${id}`,
       type: "GET",
       success: (employee) => {
         const queryParams = new URLSearchParams({
-          ...employee,
-       
-          edit: true,
-
-
+          id: employee.id,
+          name: employee.name,
+          profile: employee.profile,
+          gender: employee.gender,
+          salary: employee.salary,
+          department: Array.isArray(employee.department) ? employee.department.join(",") : employee.department,
+          day: employee.startDate.day,
+          month: employee.startDate.month,
+          year: employee.startDate.year,
+          notes: employee.notes,
+          edit: true
         }).toString();
+  
         window.location.href = `Registration.html?${queryParams}`;
       },
       error: (error) => {
@@ -165,10 +186,7 @@ $(document).ready(function () {
         alert("Failed to fetch employee for editing.");
       }
     });
-   
-
   }
-
 
 });
 
